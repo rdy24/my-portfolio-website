@@ -17,8 +17,8 @@ const Header = () => {
 	return (
 		<header className="header">
 			<nav className="nav container">
-				<a href="/" className="nav__logo">
-					Smith
+				<a href="#home" className="nav__logo">
+					rdy24
 				</a>
 
 				<div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
@@ -43,19 +43,6 @@ const Header = () => {
 								}
 							>
 								<i className="uil uil-user nav__icon"></i> About
-							</a>
-						</li>
-						<li className="nav__item">
-							<a
-								href="#skills"
-								onClick={() => setActiveNav("#skills")}
-								className={
-									activeNav === "#skills"
-										? "nav__link active-link"
-										: "nav__link"
-								}
-							>
-								<i className="uil uil-file-alt nav__icon"></i> Skills
 							</a>
 						</li>
 						<li className="nav__item">

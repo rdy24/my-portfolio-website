@@ -47,6 +47,13 @@
 	color: var(--title-color-dark);
 }
 
+/* make blur background header */
+
+.scroll-header {
+	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+	opacity: 0.9;
+}
+
 /* Breakpoints */
 
 /* For medium devices */
@@ -109,10 +116,6 @@
 	.nav__toogle {
 		display: block;
 	}
-}
-
-.scroll-header {
-	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* For small devices */

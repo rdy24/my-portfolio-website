@@ -14,10 +14,13 @@
 	color: var(--title-color);
 	margin: 0 var(--mb-1);
 	cursor: pointer;
+	border-radius: 0.5rem;
+	padding: 0.25rem 0.75rem;
 }
 
 .qualification__button:hover {
-	color: var(--title-color-dark);
+	background-color: var(--title-color);
+	color: var(--container-color);
 }
 
 .qualification__icon {
@@ -26,7 +29,8 @@
 }
 
 .qualification__active {
-	color: var(--title-color-dark);
+	background-color: var(--title-color);
+	color: var(--container-color);
 }
 
 .qualification__sections {
@@ -68,7 +72,7 @@
 	display: inline-block;
 	width: 13px;
 	height: 13px;
-	background-color: var(--text-color);
+	background-color: var(--title-color-dark);
 	border-radius: 50%;
 }
 
@@ -76,7 +80,7 @@
 	display: block;
 	width: 1px;
 	height: 100%;
-	background-color: var(--text-color);
+	background-color: var(--title-color-dark);
 	transform: translate(6px, -7px);
 }
 

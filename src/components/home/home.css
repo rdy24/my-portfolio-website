@@ -1,9 +1,9 @@
 .home__container {
-	row-gap: 7rem;
+	row-gap: 4rem;
 }
 
 .home__content {
-	grid-template-columns: 116px repeat(2, 1fr);
+	grid-template-columns: 100px 1fr;
 	padding-top: 5.5rem;
 	column-gap: 2rem;
 	align-items: center;
@@ -48,13 +48,13 @@
 	position: absolute;
 	width: 70px;
 	height: 1px;
-	background-color: var(--text-color);
+	background-color: var(--title-color);
 	left: 0;
 	top: 1rem;
 }
 
 .home__description {
-	max-width: 400px;
+	max-width: 500px;
 	margin-bottom: var(--mb-3);
 }
 
@@ -84,7 +84,7 @@
 }
 
 .home__scroll {
-	margin-left: 9.25rem;
+	margin-left: 2rem;
 }
 
 .wheel {
@@ -116,7 +116,6 @@
 /* For large devices */
 @media screen and (max-width: 992px) {
 	.home__content {
-		grid-template-columns: 100px repeat(2, 1fr);
 		column-gap: 1.25rem;
 	}
 
@@ -154,7 +153,6 @@
 /* For medium devices */
 @media screen and (max-width: 768px) {
 	.home__content {
-		grid-template-columns: 0.5fr 3fr;
 		padding-top: 3.5rem;
 	}
 

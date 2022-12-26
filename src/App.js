@@ -7,8 +7,6 @@ import Home from "./components/home/Home";
 import Qualification from "./components/qualification/Qualification";
 import ScrollUp from "./components/scrollup/ScrollUp";
 import Services from "./components/services/Services";
-import Skills from "./components/skills/Skills";
-import Testimonials from "./components/testimonials/Testimonials";
 import Work from "./components/work/Work";
 
 function App() {
@@ -18,12 +16,10 @@ function App() {
 			<main className="main">
 				<Home />
 				<About />
-				<Skills />
-				<Services />
 				<Qualification />
+				<Services />
 				<Work />
 			</main>
-			<Testimonials />
 			<Contact />
 			<Footer />
 			<ScrollUp />
