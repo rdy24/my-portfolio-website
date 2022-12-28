@@ -17,14 +17,14 @@ const Qualification = () => {
 		<section className="qualification section">
 			<h2
 				className="section__title"
-				data-aos="fade-right"
+				data-aos="flip-right"
 				data-aos-duration="1500"
 			>
 				Qualification
 			</h2>
 			<span
 				className="section__subtitle"
-				data-aos="fade-left"
+				data-aos="flip-left"
 				data-aos-duration="2000"
 			>
 				My personal journey
