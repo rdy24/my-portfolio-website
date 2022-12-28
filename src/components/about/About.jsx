@@ -1,25 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
-import AboutImg from "../../assets/work1.jpg";
+import AboutImg from "../../assets/my-photo.png";
 import CV from "../../assets/John-Cv.pdf";
 import Info from "./Info";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<section className="about section" id="about">
-			<h2 className="section__title">About Me</h2>
-			<span className="section__subtitle">My introduction</span>
+			<h2
+				className="section__title"
+				data-aos="fade-down"
+				data-aos-duration="1500"
+			>
+				About Me
+			</h2>
+			<span
+				className="section__subtitle"
+				data-aos="fade-up"
+				data-aos-duration="2000"
+			>
+				My introduction
+			</span>
 
-			<div className="about__container container grid">
+			<div className="about__container container grid" data-aos="zoom-in">
 				<img src={AboutImg} alt="" className="about__img" />
 				<div className="about__data">
 					<Info />
 					<p className="about__description">
-						I am a full stack web developer with a background in business and
-						finance. I have a passion for learning and problem solving. I am a
-						quick learner and I am always looking for new challenges. I am a
-						team player and I enjoy working with others to achieve a common
-						goal.
+						I am a fifth-semester computer engineering student with skills in
+						front-end and back-end development. Despite having less than one
+						year of experience, I am eager to apply my knowledge in real
+						projects and become a proficient full-stack developer. I am
+						passionate about using technology to solve problems and constantly
+						learning and improving my skills. I am excited to continue my
+						professional development in this field.
 					</p>
 					<a download="" href={CV} className="button button--flex">
 						Download CV{" "}

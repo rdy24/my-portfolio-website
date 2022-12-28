@@ -1,28 +1,56 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { Form, Button } from "semantic-ui-react";
+import { useForm } from "react-hook-form";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
 	const form = useRef();
 
 	const sendEmail = (e) => {
-		e.preventDefault();
-
 		emailjs.sendForm(
 			"service_xl35lxb",
 			"template_m3qj3gk",
 			form.current,
 			"PSBGUsEAPQ8UtDjIf"
 		);
-		e.target.reset();
+		// reset form field
+		form.current.reset();
 	};
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<section className="contact section" id="contact">
-			<h2 className="section__title">Contact Me</h2>
-			<span className="section__subtitle">Get in touch</span>
+			<h2
+				className="section__title"
+				data-aos="fade-down"
+				data-aos-duration="1500"
+			>
+				Contact Me
+			</h2>
+			<span
+				className="section__subtitle"
+				data-aos="fade-up"
+				data-aos-duration="2000"
+			>
+				Get in touch
+			</span>
 
 			<div className="contact__container container grid">
-				<div className="contact__content">
+				<div
+					className="contact__content"
+					data-aos="flip-left"
+					data-aos-duration="2000"
+				>
 					<h3 className="contact__title">Talk to me</h3>
 					<div className="contact__info">
 						<div className="contact__card">
@@ -42,28 +70,48 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<div className="contact__content">
-					<h3 className="contact__title">Write me yout project</h3>
-					<form ref={form} onSubmit={sendEmail} className="contact__form">
-						<div className="contact__form-div">
+				<div
+					className="contact__content"
+					data-aos="flip-right"
+					data-aos-duration="2500"
+				>
+					<h3 className="contact__title">Write me your project</h3>
+					<form
+						ref={form}
+						onSubmit={handleSubmit(sendEmail)}
+						className="contact__form"
+					>
+						<Form.Field className="contact__form-div">
 							<label className="contact__form-tag">Name</label>
 							<input
 								type="text"
 								className="contact__form-input"
 								name="name"
 								placeholder="Insert your name"
+								{...register("name", { required: true })}
 							/>
-						</div>
-						<div className="contact__form-div">
+						</Form.Field>
+						{errors.name && (
+							<span className="contact__form-error">Name is required</span>
+						)}
+
+						<Form.Field className="contact__form-div">
 							<label className="contact__form-tag">Email</label>
 							<input
 								type="email"
 								name="email"
 								className="contact__form-input"
 								placeholder="Insert your email"
+								{...register("email", {
+									required: true,
+									pattern: /^\S+@\S+$/i,
+								})}
 							/>
-						</div>
-						<div className="contact__form-div contact__form-area">
+						</Form.Field>
+						{errors.email && (
+							<span className="contact__form-error">Email is required</span>
+						)}
+						<Form.Field className="contact__form-div contact__form-area">
 							<label className="contact__form-tag">Project</label>
 							<textarea
 								name="project"
@@ -71,9 +119,14 @@ const Contact = () => {
 								rows="10"
 								className="contact__form-input"
 								placeholder="Write your project"
+								{...register("project", { required: true })}
 							></textarea>
-						</div>
-						<button className="button button--flex">
+						</Form.Field>
+						{errors.project && (
+							<span className="contact__form-error">Project is required</span>
+						)}
+						<br />
+						<Button className="button button--flex">
 							Send Message
 							<svg
 								class="button__icon"
@@ -92,7 +145,7 @@ const Contact = () => {
 									fill="var(--container-color)"
 								></path>
 							</svg>
-						</button>
+						</Button>
 					</form>
 				</div>
 			</div>

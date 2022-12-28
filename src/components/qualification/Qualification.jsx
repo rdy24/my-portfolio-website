@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./qualification.css";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Qualification = () => {
 	const [toggleState, setToggleState] = useState(1);
@@ -7,13 +10,32 @@ const Qualification = () => {
 	const toggleTab = (index) => {
 		setToggleState(index);
 	};
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<section className="qualification section">
-			<h2 className="section__title">Qualification</h2>
-			<span className="section__subtitle">My personal journey</span>
+			<h2
+				className="section__title"
+				data-aos="fade-right"
+				data-aos-duration="1500"
+			>
+				Qualification
+			</h2>
+			<span
+				className="section__subtitle"
+				data-aos="fade-left"
+				data-aos-duration="2000"
+			>
+				My personal journey
+			</span>
 
 			<div className="qualification__container container">
-				<div className="qualification__tabs">
+				<div
+					className="qualification__tabs"
+					data-aos="flip-right"
+					data-aos-duration="1500"
+				>
 					<div
 						className={
 							toggleState === 1
@@ -37,7 +59,11 @@ const Qualification = () => {
 						Experience
 					</div>
 				</div>
-				<div className="qualification__sections">
+				<div
+					className="qualification__sections"
+					data-aos="zoom-in-up"
+					data-aos-duration="3000"
+				>
 					<div
 						className={
 							toggleState === 1
@@ -47,67 +73,17 @@ const Qualification = () => {
 					>
 						<div className="qualification__data">
 							<div>
-								<h3 className="qualification__title">Bachelor of Science</h3>
+								<h3 className="qualification__title">Bachelor Degree</h3>
 								<span className="qualification__subtitle">
-									Computer Science
+									Computer Science, Institut Teknologi Nasional Malang
 								</span>
 								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2017 - 2021
+									<i className="uil uil-calendar-alt"></i> 2020 - Present
 								</div>
 							</div>
 							<div>
 								<span className="qualification__rounder"></span>
 								<span className="qualification__line"></span>
-							</div>
-						</div>
-
-						<div className="qualification__data">
-							<div></div>
-							<div>
-								<span className="qualification__rounder"></span>
-								<span className="qualification__line"></span>
-							</div>
-							<div>
-								<h3 className="qualification__title">Web Developer</h3>
-								<span className="qualification__subtitle">
-									Computer Science
-								</span>
-								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2017 - Present
-								</div>
-							</div>
-						</div>
-
-						<div className="qualification__data">
-							<div>
-								<h3 className="qualification__title">Backend Developer</h3>
-								<span className="qualification__subtitle">
-									Computer Science
-								</span>
-								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2017 - Present
-								</div>
-							</div>
-							<div>
-								<span className="qualification__rounder"></span>
-								<span className="qualification__line"></span>
-							</div>
-						</div>
-
-						<div className="qualification__data">
-							<div></div>
-							<div>
-								<span className="qualification__rounder"></span>
-								<span className="qualification__line"></span>
-							</div>
-							<div>
-								<h3 className="qualification__title">Front end Developer</h3>
-								<span className="qualification__subtitle">
-									Computer Science
-								</span>
-								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2017 - Present
-								</div>
 							</div>
 						</div>
 					</div>
@@ -120,34 +96,17 @@ const Qualification = () => {
 					>
 						<div className="qualification__data">
 							<div>
-								<h3 className="qualification__title">API Development</h3>
+								<h3 className="qualification__title">Web Devlopment Laravel</h3>
 								<span className="qualification__subtitle">
-									Computer Science
+									Intern at PT. Solusi Tiga Selaras
 								</span>
 								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2017 - 2021
+									<i className="uil uil-calendar-alt"></i> Aug 2022 - Des 2022
 								</div>
 							</div>
 							<div>
 								<span className="qualification__rounder"></span>
 								<span className="qualification__line"></span>
-							</div>
-						</div>
-
-						<div className="qualification__data">
-							<div></div>
-							<div>
-								<span className="qualification__rounder"></span>
-								<span className="qualification__line"></span>
-							</div>
-							<div>
-								<h3 className="qualification__title">UI Designer</h3>
-								<span className="qualification__subtitle">
-									Computer Science
-								</span>
-								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2017 - Present
-								</div>
 							</div>
 						</div>
 					</div>

@@ -78,7 +78,7 @@
 	height: 100%;
 	border: 2px solid var(--title-color);
 	background: none;
-	color: var(--title-color);
+	color: var(--text-color);
 	outline: none;
 	border-radius: 0.5rem;
 	padding: 1.5rem;
@@ -101,6 +101,13 @@
 
 .contact__form-area textarea {
 	resize: none;
+}
+
+.contact__form-error {
+	position: relative;
+	top: -2rem;
+	color: #dc3545;
+	font-size: var(--smaller-font-size);
 }
 
 /*=============== BREAKPOINTS ===============*/
