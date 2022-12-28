@@ -33,7 +33,7 @@ const Services = () => {
 			<div className="services__container container grid">
 				<div
 					className="services__content"
-					data-aos="fade-right"
+					data-aos="fade-down"
 					data-aos-duration="1500"
 				>
 					<div>
