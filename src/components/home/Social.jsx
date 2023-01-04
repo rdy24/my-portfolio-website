@@ -2,7 +2,7 @@ import React from "react";
 
 const Social = () => {
 	return (
-		<div className="home__social">
+		<div className="home__social animate__animated animate__fadeInLeft animate__delay-1s">
 			<a
 				href="https://www.instagram.com/rdyzar.24/"
 				className="home__social-icon"

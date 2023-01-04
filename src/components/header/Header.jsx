@@ -15,7 +15,7 @@ const Header = () => {
 	const [activeNav, setActiveNav] = useState("#home");
 
 	return (
-		<header className="header">
+		<header className="header animate__animated animate__slideInDown animate__delay-1s">
 			<nav className="nav container">
 				<a href="#home" className="nav__logo">
 					rdy24

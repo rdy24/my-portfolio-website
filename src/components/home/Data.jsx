@@ -4,19 +4,21 @@ import { TypeAnimation } from "react-type-animation";
 const Data = () => {
 	return (
 		<div className="home__data">
-			<h1 className="home__title">
+			<h1 className="home__title animate__animated animate__fadeInDownBig">
 				<TypeAnimation
 					sequence={["Hi, My Name is", 1500, "Raflizar Deswandi Yahya", 2000]}
 					cursor={true}
 					repeat={Infinity}
 				/>
 			</h1>
-			<h3 className="home__subtitle">FullStack Developer</h3>
-			<p className="home__description">
+			<h3 className="home__subtitle animate__animated animate__fadeInDownBig">
+				FullStack Developer
+			</h3>
+			<p className="home__description animate__animated animate__fadeInDown animate__delay-1s">
 				I'm a FullStack Developer with a passion for learning new technologies
 				and creating new things.
 			</p>
-			<a href="#contact" className="button button--flex">
+			<a href="#contact" className="button button--flex animate__animated animate__flipInX animate__delay-2s">
 				Say Hello
 				<svg
 					class="button__icon"
