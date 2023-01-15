@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./about.css";
-import AboutImg from "../../assets/my-photo.png";
-import CV from "../../assets/John-Cv.pdf";
+import AboutImg from "../../assets/my-photo-1.jpeg";
+import CV from "../../assets/Raflizar-CV.pdf";
 import Info from "./Info";
 // importing aos
 import AOS from "aos";
