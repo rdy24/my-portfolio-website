@@ -33,7 +33,7 @@ const About = () => {
 				<div className="about__data">
 					<Info />
 					<p className="about__description">
-						I am a fifth-semester computer engineering student with skills in
+						I am a seventh-semester computer engineering student with skills in
 						front-end and back-end development. Despite having less than one
 						year of experience, I am eager to apply my knowledge in real
 						projects and become a proficient full-stack developer. I am

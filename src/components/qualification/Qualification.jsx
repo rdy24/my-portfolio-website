@@ -109,6 +109,36 @@ const Qualification = () => {
 								<span className="qualification__line"></span>
 							</div>
 						</div>
+						<div className="qualification__data">
+							<div>
+								<h3 className="qualification__title">Fullstak Engineer</h3>
+								<span className="qualification__subtitle">
+									Intern at PT. DOT Indonesia
+								</span>
+								<div className="qualification__calendar">
+									<i className="uil uil-calendar-alt"></i> Feb 2023 - Mei 2023
+								</div>
+							</div>
+							<div>
+								<span className="qualification__rounder"></span>
+								<span className="qualification__line"></span>
+							</div>
+						</div>
+						<div className="qualification__data">
+							<div>
+								<h3 className="qualification__title">Fullstak Engineer</h3>
+								<span className="qualification__subtitle">
+									Freelance at PT. DOT Indonesia
+								</span>
+								<div className="qualification__calendar">
+									<i className="uil uil-calendar-alt"></i> Mei 2023 - Present
+								</div>
+							</div>
+							<div>
+								<span className="qualification__rounder"></span>
+								<span className="qualification__line"></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
