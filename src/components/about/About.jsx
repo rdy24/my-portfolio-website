@@ -33,13 +33,13 @@ const About = () => {
 				<div className="about__data">
 					<Info />
 					<p className="about__description">
-						I am a seventh-semester computer engineering student with skills in
-						front-end and back-end development. Despite having less than one
-						year of experience, I am eager to apply my knowledge in real
-						projects and become a proficient full-stack developer. I am
-						passionate about using technology to solve problems and constantly
-						learning and improving my skills. I am excited to continue my
-						professional development in this field.
+						As a junior software developer with over a year of
+						experience, I am keen on specializing as a Backend
+						Developer, particularly in API development and
+						implementing architecture tailored to business needs.
+						Additionally, I possess skills as a Fullstack Developer,
+						enabling me to contribute from frontend to backend
+						development.
 					</p>
 					<a download="" href={CV} className="button button--flex">
 						Download CV{" "}
