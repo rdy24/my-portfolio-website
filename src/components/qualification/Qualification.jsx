@@ -78,7 +78,7 @@ const Qualification = () => {
 									Computer Science, Institut Teknologi Nasional Malang
 								</span>
 								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> 2020 - Present
+									<i className="uil uil-calendar-alt"></i> 2020 - 2024
 								</div>
 							</div>
 							<div>
@@ -152,8 +152,23 @@ const Qualification = () => {
 									Intern at Sekawan Media
 								</span>
 								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i> Nov 2023 - Present
+									<i className="uil uil-calendar-alt"></i> Nov 2023 - Apr 2024
 								</div>
+							</div>
+						</div>
+						<div className="qualification__data">
+							<div>
+								<h3 className="qualification__title">Fullstack Developer</h3>
+								<span className="qualification__subtitle">
+									FullTime at Sekawan Media
+								</span>
+								<div className="qualification__calendar">
+									<i className="uil uil-calendar-alt"></i> Apr 2024 - Present
+								</div>
+							</div>
+							<div>
+								<span className="qualification__rounder"></span>
+								<span className="qualification__line"></span>
 							</div>
 						</div>
 					</div>
